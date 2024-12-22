@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    background-color: #1F4529;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E8ECD7;
+}
+/* index */
+#surah-list{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+}
+@media (max-width: 1200px) {
+    #surah-list {
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+}
+@media (max-width: 860px) {
+    #surah-list {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+}
+.surah-item{
+    
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+input {
+    width: 50%;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+.filter-sort{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+select{
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.select-item {
+    display: block;
+    width: 300px;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    background-color: #E8ECD7;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    border: solid black 1pt;
+}
+.select-item :hover{
+    color: white;
+}
+.select-item h3 {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+/* surat */
+.surah-info-item{
+    width: 80%;
+    border: solid 1px #E8ECD7;
+    border-radius: 8px;
+    background-color: #47663B;
+    padding: 15px;
+    margin: auto;
+    color: #E8ECD7;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.surah-info-item button{
+    background-color: #1F4529;
+    border-radius: 8px;
+    border: solid 1px #E8ECD7;
+    color: #E8ECD7;
+    font-size: 20px;
+    padding: 15px;
+}
+.surah-info-item button :hover{
+    color: black;
+}
+
+/* baca surat */
+.ayat-item {
+    display: flex;
+    align-items: center; 
+    width: 80%;
+    border: solid 1px #E8ECD7;
+    border-radius: 8px;
+    background-color: #47663B;
+    padding: 15px;
+    margin: auto;
+    color: #E8ECD7;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.ayat-item .left {
+    width: 10%; 
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: bold;
+}
+.ayat-item .right {
+    width: 90%;
+    padding-left: 10px;
+}
+.ayat-item .right .ayat-arab {
+    font-size: 36px; 
+    font-weight: bold;
+    color: #E8ECD7; 
+    text-align: right;
+    direction: rtl;
+}
+.ayat-item .right .ayat-translation {
+    font-size: 16px; 
+    font-style: italic;
+    margin-top: 5px; 
+    text-align: right; 
+}

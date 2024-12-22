@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baca Surat</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <script type="module" src="./js/app.js" defer></script>
+</head>
+<body>
+    <h1 id="title"><span class="title"></span> (<span class="surah-translation"></span>)</h1>
+    <div id="baca-surat"></div>
+    
+<template id="ayat-template">
+    <div class="ayat-item">
+        <div class="left">
+            <span class="ayat-number"></span> <!-- Nomor ayat -->
+        </div>
+        <div class="right">
+            <p class="ayat-arab"></p> <!-- Teks Arab -->
+            <p class="ayat-translation"></p> <!-- Terjemahan -->
+        </div>
+    </div>
+    
+</template>
+</body>
+</html>

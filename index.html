@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Quran Indonesia</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <script type="module" src="./js/app.js" defer></script>
+</head>
+<body>
+    <h1>Al-Quran Indonesia</h1>
+    <div class="search-container"><input type="text" id="search-input" class="search-input" placeholder="Cari Surat..." /></div>
+    <br>
+
+    <div class="filter-sort">
+        <select id="sort-dropdown">
+            <option value="asc">Sort Ascending</option>
+            <option value="desc">Sort Descending</option>
+        </select>
+        <select id="type-dropdown">
+            <option value="">Filter</option>
+            <option value="makkiyah">Makiyah</option>
+            <option value="madaniyah">Madaniyah</option>
+        </select>
+    </div>
+    
+    <div id="surah-list" class="surah-list">
+        <template id="surah-template">
+            <div href="" class="surah-item">
+                <a  class="select-item"><h3><span class="surah-number"></span>. <span class="surah-name"></span> (<span class="surah-translation"></span>)</h3></a>
+            </div>
+        </template>
+    </div>
+</body>
+</html>
